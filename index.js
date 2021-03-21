@@ -1,9 +1,10 @@
 // Write your code here!
 
-let main = document.querySelector('main');
-main.remove();
+let mains = document.querySelector('main');
+mains.remove();
 
-let newHeader = document.getElementById("victory");
-newHeader.h1; 
-newHeader.id;
-newHeader.innerHTML="Waluka is the champion"
+let newHeader = document.createElement("h1");
+newHeader.id="victory";
+newHeader.innerHTML="Waluka is the champion";
+
+document.getElementsByTagName("body")[0].appendChild(newHeader);
